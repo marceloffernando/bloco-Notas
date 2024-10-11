@@ -89,7 +89,8 @@ header{
     background-color: transparent;
     color: #fff;
     resize: none;
-    height: 100%;
+    height: 85%;
+    width: 90%;
     border: none;
     outline: none;
 }
