@@ -9,7 +9,6 @@ body{
     background-color: black;
 }
 
-/* CABEÇALHO */
 header{
     border-bottom: 1px solid #ccc;
     padding: 1rem 2rem;
@@ -22,8 +21,6 @@ header{
     display: flex;
     align-items: center;
     gap: 1rem;
-    
-    /* gap = afasta a lupa do input */
 }
 #search-input{
     background-color: #525356;
@@ -34,7 +31,6 @@ header{
     color: #ddd;
     width: 400px;
 }
-
 #search-input::placeholder{
     color: #ddd;
 }
@@ -51,7 +47,6 @@ header{
     background-color: #fff;
     color: #333;
 }
-
 #add-note-container{
     display: flex;
     width: 400px;
@@ -63,7 +58,7 @@ header{
     border-radius: 5px;
 }
 #add-note-container input{
-    flex: 1; /*usa a largura completa do width*/
+    flex: 1; 
     background-color: transparent;
     color: #fff;
     border: 1px solid #525356;
@@ -74,7 +69,6 @@ header{
     color: #fff;
     border: 1px solid #525356;
 }
-
 /* NOTAS */
 #notes-container{
     display: grid;
@@ -94,7 +88,7 @@ header{
 .note textarea{
     background-color: transparent;
     color: #fff;
-    resize: none;/*usuario não pode aumetar o tamanha da textarea*/
+    resize: none;
     height: 100%;
     border: none;
     outline: none;
@@ -125,7 +119,6 @@ header{
 }
 .note .bi-file-earmark-plus{
     top: 40px;
-    /* os incons ficram um sobre o outro com esse codigo os separa  */
 }
 .note .bi-x-lg:hover, .note .bi-file-earmark-plus:hover{
     color: #fff;

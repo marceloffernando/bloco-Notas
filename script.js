@@ -124,13 +124,9 @@ function getNotes(){
     return ordemNotes;
     
 }
-
-// FUNÇÃO DE SALVAR NOTAS
 function saveNotes(notes){
     localStorage.setItem("notes", JSON.stringify(notes));
 }
-
-// FUNÇÃO PARA PESQUISA DE NOTAS
 function searchNotes(search){
     const searchResults = getNotes().filter((note) => {
        return note.content.includes(search)
@@ -149,20 +145,19 @@ function searchNotes(search){
     showNotes()
 }
 // EVENTOS
-// BOTAO DE ADICIONAR NOTAS
+
 addNoteBtn.addEventListener("click", () => addNote())
 
-// FAZ A PESQUISA DE NOTAS
 searchInput.addEventListener("keyup", (e) => {
     const search = e.target.value;
     searchNotes(search)
 })
-// ADD NOTAS COM A TECLA ENTER
+
 noteInput.addEventListener("keydown", (e) =>{
     if(e.key === "Enter"){
         addNote()
     }
 })
-// INICIALIZÇÃO
+
 
 showNotes()
