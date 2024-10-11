@@ -127,7 +127,7 @@ header{
     background-color:#3c3c3f ;
 }
  /* RESPOSNSIVIDADE */
- @media(max-width: 450px ){
+ @media(max-width: 600px ){
     header{
         flex-direction: column;
         width: 100%;
